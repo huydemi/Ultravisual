@@ -34,6 +34,9 @@ class InspirationCell: UICollectionViewCell {
     let minAlpha: CGFloat = 0.3
     let maxAlpha: CGFloat = 0.75
     imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
+    
+    let scale = max(delta, 0.5)
+    titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
   }
   
 }
