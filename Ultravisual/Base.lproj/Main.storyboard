@@ -13,7 +13,7 @@
         <scene sceneID="GAb-ki-uCL">
             <objects>
                 <collectionViewController id="Gi5-eq-qj2" customClass="InspirationsViewController" customModule="Ultravisual" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="tNe-IU-296">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tNe-IU-296">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,15 +32,24 @@
                                                 <constraint firstAttribute="height" constant="280" id="St8-tc-GQM"/>
                                             </constraints>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJf-Mn-XeG">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tJf-Mn-XeG" secondAttribute="trailing" id="0b5-Sj-jB4"/>
                                     <constraint firstItem="m63-IB-4KW" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="0tg-ew-otd"/>
+                                    <constraint firstItem="tJf-Mn-XeG" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="2O1-Np-Su3"/>
                                     <constraint firstItem="m63-IB-4KW" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="4n7-qX-G2x"/>
+                                    <constraint firstItem="tJf-Mn-XeG" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="ljZ-Ze-zb2"/>
                                     <constraint firstAttribute="bottom" secondItem="m63-IB-4KW" secondAttribute="bottom" id="wIy-P9-xC9"/>
+                                    <constraint firstAttribute="bottom" secondItem="tJf-Mn-XeG" secondAttribute="bottom" id="wQq-QH-TIH"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
+                                    <outlet property="imageCoverView" destination="tJf-Mn-XeG" id="cPo-Fj-8Va"/>
                                     <outlet property="imageView" destination="m63-IB-4KW" id="FhT-d4-tQi"/>
                                 </connections>
                             </collectionViewCell>
