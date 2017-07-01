@@ -42,24 +42,44 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHp-uT-QlA">
+                                            <rect key="frame" x="0.0" y="126" width="200" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glf-ph-zwC">
+                                            <rect key="frame" x="0.0" y="150" width="200" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tJf-Mn-XeG" secondAttribute="trailing" id="0b5-Sj-jB4"/>
                                     <constraint firstItem="m63-IB-4KW" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="0tg-ew-otd"/>
                                     <constraint firstItem="tJf-Mn-XeG" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="2O1-Np-Su3"/>
+                                    <constraint firstItem="iHp-uT-QlA" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="2oc-C7-3Ml"/>
                                     <constraint firstItem="m63-IB-4KW" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="4n7-qX-G2x"/>
+                                    <constraint firstAttribute="trailing" secondItem="iHp-uT-QlA" secondAttribute="trailing" id="51F-hN-4FE"/>
+                                    <constraint firstItem="iHp-uT-QlA" firstAttribute="top" secondItem="qi7-vb-7N5" secondAttribute="bottom" id="SWl-9A-Jzk"/>
+                                    <constraint firstAttribute="trailing" secondItem="glf-ph-zwC" secondAttribute="trailing" id="aEl-wu-MHU"/>
+                                    <constraint firstItem="glf-ph-zwC" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="ali-WF-XF5"/>
                                     <constraint firstAttribute="trailing" secondItem="qi7-vb-7N5" secondAttribute="trailing" id="iZ5-Sa-Pqk"/>
                                     <constraint firstItem="tJf-Mn-XeG" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="ljZ-Ze-zb2"/>
                                     <constraint firstItem="qi7-vb-7N5" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="mLG-UD-yPW"/>
                                     <constraint firstItem="qi7-vb-7N5" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="ozA-Lp-9FM"/>
                                     <constraint firstAttribute="bottom" secondItem="m63-IB-4KW" secondAttribute="bottom" id="wIy-P9-xC9"/>
                                     <constraint firstAttribute="bottom" secondItem="tJf-Mn-XeG" secondAttribute="bottom" id="wQq-QH-TIH"/>
+                                    <constraint firstItem="glf-ph-zwC" firstAttribute="top" secondItem="iHp-uT-QlA" secondAttribute="bottom" id="yJW-S5-6IR"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
                                     <outlet property="imageCoverView" destination="tJf-Mn-XeG" id="cPo-Fj-8Va"/>
                                     <outlet property="imageView" destination="m63-IB-4KW" id="FhT-d4-tQi"/>
+                                    <outlet property="speakerLabel" destination="glf-ph-zwC" id="R73-Vm-Fw5"/>
+                                    <outlet property="timeAndRoomLabel" destination="iHp-uT-QlA" id="HQe-Qf-osr"/>
                                     <outlet property="titleLabel" destination="qi7-vb-7N5" id="pfN-uM-eRb"/>
                                 </connections>
                             </collectionViewCell>

@@ -24,6 +24,7 @@ class InspirationsViewController: UICollectionViewController {
       view.backgroundColor = UIColor(patternImage: patternImage)
     }
     collectionView!.backgroundColor = UIColor.clear
+    collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
   }
 
 }

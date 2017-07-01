@@ -13,12 +13,16 @@ class InspirationCell: UICollectionViewCell {
   @IBOutlet fileprivate weak var imageView: UIImageView!
   @IBOutlet fileprivate weak var imageCoverView: UIView!
   @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var timeAndRoomLabel: UILabel!
+  @IBOutlet weak var speakerLabel: UILabel!
   
   var inspiration: Inspiration? {
     didSet {
       if let inspiration = inspiration {
         imageView.image = inspiration.backgroundImage
         titleLabel.text = inspiration.title
+        timeAndRoomLabel.text = inspiration.roomAndTime
+        speakerLabel.text = inspiration.speaker
       }
     }
   }
@@ -37,6 +41,9 @@ class InspirationCell: UICollectionViewCell {
     
     let scale = max(delta, 0.5)
     titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
+    
+    timeAndRoomLabel.alpha = delta
+    speakerLabel.alpha = delta
   }
   
 }
